@@ -1,0 +1,176 @@
+@charset "ISO-8859-1";
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	background-color: #F1F3F4;
+	margin: 0px;
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	position: fixed;
+	z-index: 10;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 40px;
+	height: 70px;
+	width: 100%;
+	background-color: #2CA3FF;
+
+	/* 	background: rgb(27,218,35);
+	background: linear-gradient(180deg, rgba(27,218,35,1) 0%, rgba(105,224,162,1) 34%, rgba(0,255,151,1) 100%); */
+}
+
+nav button {
+	border: 1px solid #00AFFB;
+	border-radius: 3px;
+	background-color: #01A0F4;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 7px 15px;
+	box-shadow: 28px 30px 20px -29px rgba(0, 0, 0, 0.72);
+	-webkit-box-shadow: 28px 30px 20px -29px rgba(0, 0, 0, 0.72);
+	-moz-box-shadow: 28px 30px 20px -29px rgba(0, 0, 0, 0.72);
+}
+section {
+	padding-top: 70px;
+}
+#divPresentacion {
+	display: flex;
+	align-items: center;
+	padding-bottom: 25px;
+	justify-content: center;
+	background-color: #F1F3F4;
+	box-shadow: 2px 30px 20px -29px rgba(0, 0, 0, 0.53) inset;
+	-webkit-box-shadow: 2px 30px 20px -29px rgba(0, 0, 0, 0.53) inset;
+	-moz-box-shadow: 2px 30px 20px -29px rgba(0, 0, 0, 0.53) inset;
+}
+
+#fotoPerfil {
+	display: flex;
+	width: 33vw;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	align-items: center;
+	justify-content: center;
+	background-color: #F1F3F4;
+}
+
+#presentacion {
+	width: 66vw;
+	padding-right: 90px;
+/* 	background-color:  rgba(105,224,162,1); */
+}
+
+#fotoPerfil img {
+	width: 200px;
+	height: 200px;
+	border-radius: 105px;
+	border: 8px solid #D9D9D9;
+	/* 	background-color: #4556ab; */
+}
+#presentacion > div {
+	display: flex;	
+	justify-content: flex-end;
+	margin-right: 20px;
+}
+#presentacion > div a {
+	display: flex;	
+	text-decoration: none;
+	align-items: center;
+	margin-left: 40px;
+}
+#presentacion div > a p {
+	padding: 0;
+	margin: 0;
+	margin-left: 10px;
+}
+.imgContacto {
+	display: flex;
+	width: 20px;
+}
+/*----------------------------------------------------------*/
+.portfolio {
+	display: flex;
+	margin-bottom: 60px;
+	background-color: #F1F3F4;
+}
+#tituloPortfolio {
+	display: flex;
+	justify-content: center
+}
+#tituloPortfolio h3 {
+	width: 70vw;
+	margin: 0px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font-size: 28px;
+	border-top: 2px solid #7F93A1;
+}
+#divContenedor, #divContenedor2 {
+	display: flex;
+	width: 64vw;
+	margin-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.53);
+	-webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.53);
+	-moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.53);
+	/* 	background-color: #B5CB42; */
+}
+.divDesarrollo a {
+	display: flex;
+	justify-content: center;
+}
+
+#divImg, #divImg2 {
+	display: flex;
+}
+
+img {
+	width: 61vw;
+}
+#divImg div :nth-child(1){
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#divImg2 div :nth-child(1){
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.portfolio div:last-child {
+	width: 33vw;
+}
+.portfolio:nth-child(3n) {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.divDesarrollo {
+	background-color: #F1F3F4;
+}
+h3 {
+	display: flex;
+	justify-content: center;
+}
+.divDesarrollo p {
+	padding-left: 40px;
+	padding-right: 30px;
+	font-size: 20px;
+	word-spacing: 5px;
+}
+/*-----------------------------------------------------------*/
+#divContacto {
+	display: flex;
+}
+#tituloContacto{
+	margin-top: 100px;
+}

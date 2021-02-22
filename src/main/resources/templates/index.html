@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/estilo.css}"	href="/css/estilo.css" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/estiloTecnologias.css}" href="/css/estiloTecnologias.css" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/estiloFormContact.css}" href="/css/estiloFormContact.css" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}" href="/css/modal.css" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<script type="text/javascript" th:src="@{/js/jquery.js}" src="/js/jquery.js"></script>
+</head>
+<body>
+	<div id="contenedorPrincipal">
+		<nav>
+			<button onclick="mover('#divPresentacion')">Presentación</button>
+			<button onclick="mover('#tituloPortfolio')">Portfolio</button>
+			<button onclick="mover('#tituloTecnologias')">Tecnologías</button>
+			<button onclick="mover('#tituloContacto')">Contacto</button>
+		</nav>
+		<section>
+			<div id="divPresentacion">
+				<div id="fotoPerfil">
+					<!-- <img alt="" th:src="@{/img/fotoCarnet.jpg}"> -->		
+					<img alt="" th:src="@{/img/carnet.png}">		
+				</div>
+				<div id="presentacion">
+					<h2>Lucas Sandoval</h2>
+					<p>Programador Web Back-end</p>
+					<p>Soy Lucas, estudiante de la carrera de ingenieria electrónica y un apasionado por la programación, actualmente 
+					con el lenguaje Java. Soy un programador web JR de java especializándome en el backend en busqueda de experiencia 
+					laboral y el conocimiento de buenas prácticas con el Framework de Spring para mejorar mis habilidads en seguridad, 
+					versatilidad y escalabilidad.</p>
+					<div>
+						<a href="https://www.linkedin.com/in/lucas-sandoval-7816b41a6"><img alt="" th:src="@{/img/contacto/linkedin.png}" class="imgContacto"><p>Sandoval Lucas</p></a>
+						<a href="https://github.com/sandoval-8"><img alt="" th:src="@{/img/contacto/github.png}" class="imgContacto"><p>sandoval-8</p></a>
+						<a href=""><img alt="" th:src="@{/img/contacto/gmail.png}" class="imgContacto"><p>sandovalucas88@gmail.com</p></a>
+					</div>
+				</div>				
+			</div>
+			<!-- ----------------------------------------------- -->
+			<div id="tituloPortfolio">
+				<h3>Portfolio</h3>
+			</div>
+			<div class="portfolio">
+				<div id="divContenedor">
+					<div id="divImg">
+						<div class="div1"><img class="img1" alt="" th:src="@{/img/gestorAsistencia/index.jpg}"></div>
+						<div class="div1"><img class="img1" alt="" th:src="@{/img/gestorAsistencia/editar1.jpg}"></div>
+						<div class="div1"><img class="img1" alt="" th:src="@{/img/gestorAsistencia/editar2.jpg}"></div>
+						<div class="div1"><img class="img1" alt="" th:src="@{/img/gestorAsistencia/index.jpg}"></div>
+					</div>					
+				</div>
+				<div class="divDesarrollo">
+					<h3>Gestor de Asistencias</h3>
+					<p>Aplicación web encargada de llevar el registro de las asistencias mensuales
+					. Es un proyecto Spring boot, desarrollado con el lenguaje java en su version 11, utiliza
+					la seguridad de Spring Security con Json Web Token (JWT), los empleados son registrados en una base 
+					de datos MySQL los cuales son obtenidos mediante una Api REST y autocompletado del formulario 
+					mediante AJAX.</p>
+					<a href="https://github.com/sandoval-8/gestor-de-asistencia-2">Repositorio Github</a>
+				</div>				
+			</div>
+			<!-- ----------------------------------------------- -->
+			<div class="portfolio">
+				<div id="divContenedor2">
+					<div id="divImg2">
+						<div class="div1"><img class="img2" alt="" th:src="@{/img/foro/foroIndex.jpg}"></div>
+<!-- 						<div class="div1"><img class="img2" alt="" th:src="@{/img/foro/foroIndex.jpg}"></div>
+						<div class="div1"><img class="img2" alt="" th:src="@{/img/foro/foroIndex.jpg}"></div>
+						<div class="div1"><img class="img2" alt="" th:src="@{/img/foro/foroIndex.jpg}"></div> -->
+					</div>					
+				</div>
+				<div class="divDesarrollo">
+					<h3>Blog de Programación</h3>
+					<p>Aplicación Spring Boot con arquitectura de microservicio usando Spring Cloud Netflix para que sea
+					mantenible y escalable, seguridad Spring Security basada en Json Web Token (JWT) para la autenticación 
+					y autorización.
+					</p>
+					<a href="https://github.com/sandoval-8/foro-de-programacion">Repositorio Github</a>
+				</div>
+			</div>
+			<!-- ----------------------------------------------- -->
+			<div id="tituloTecnologias">
+				<h3>Tecnologías</h3>
+			</div>
+			<div id="divTecnologias">
+				<div id="tecnologiasLista">
+					<div><img alt="" th:src="@{/img/tecnologias/java-8.png}">Java 8</div>
+					<div><img alt="" th:src="@{/img/tecnologias/spring-boot.png}">Spring Boot</div>
+					<div><img alt="" th:src="@{/img/tecnologias/spring-cloud.png}">Spring Cloud</div>
+					<div><img alt="" th:src="@{/img/tecnologias/spring-data.png}">Spring JPA</div>
+					<div><img alt="" th:src="@{/img/tecnologias/maven.png}">Maven</div>
+					<div><img alt="" th:src="@{/img/tecnologias/git.png}">Git</div>
+					<div><img alt="" th:src="@{/img/tecnologias/html.png}">HTML</div>
+					<div><img alt="" th:src="@{/img/tecnologias/css.png}">CSS</div>
+					<div><img alt="" th:src="@{/img/tecnologias/javascript.png}">JavaScript</div>
+					<div><img alt="" th:src="@{/img/tecnologias/thymeleaf.png}">Thymeleaf</div>
+					<div><img alt="" th:src="@{/img/tecnologias/api-rest.png}">ApiREST</div>
+					<div><img alt="" th:src="@{/img/tecnologias/microservicios.png}">Microservicios</div>
+				</div>
+			</div>
+			<!-- ----------------------------------------------- -->
+			<div id="divContacto">
+				<div id="tituloContacto">
+					<h3>Contacto</h3>
+				</div>
+				<div id="contenedorForm">
+					<form id="formularioContacto">
+						<label>Nombre</label><input id="nombre" type="text">
+						<label>Apellido</label><input id="apellido" type="text">
+						<label>email</label><input id="email" type="email" text="">
+						<label>Mensaje</label><textarea id="mensaje" rows="" cols=""></textarea>
+						<div><button id="botonEnviar">Enviar</button></div>
+					</form>
+				</div>				
+			</div>
+		</section>
+	</div>
+	<div id="modal">
+		<div id="modal-contenido">
+			<div>
+				<h4>Mensaje Enviado!</h4>
+				<p>Gracias por interesarte en mi trabajo, te respondere a la brevedad.</p>
+			</div>
+			<div><img alt="" th:src="@{/img/modal/ok.png}"></div>
+		</div>
+	</div>
+	<script type="text/javascript" th:src="@{/js/eventos.js}" src="/js/eventos.js"></script>
+	<script type="text/javascript" th:src="@{/js/email.js}" src="/js/email.js"></script>
+	<script type="text/javascript" th:src="@{/js/mover.js}" src="/js/mover.js"></script>
+</body>
+</html>
